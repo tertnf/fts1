@@ -1,0 +1,10 @@
+.body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.container {
+  width: 1024px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
