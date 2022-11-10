@@ -1,0 +1,164 @@
+@charset "UTF-8";
+.body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navigation {
+  display: none;
+}
+
+.container {
+  width: 1024px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*Утилиты*/
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  padding: 0;
+}
+
+.lesson-toggle-feature::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  bottom: -1px;
+  background-image: url(./../images/svg/slash.svg);
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.lesson-toggle-button {
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #342C23;
+}
+
+.lesson-toggle-button.active {
+  color: #BEA183;
+}
+
+.lesson-toggle-item {
+  margin-left: 16px;
+  margin-right: 10px;
+}
+
+.lesson-toggle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -16px;
+  margin-right: -10px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons :not(:last-child) {
+  margin-right: 10px;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-title {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+  /* identical to box height */
+  text-align: center;
+  color: #342C23;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.product-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #BEA183;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-type a:active, .product-type a:visited {
+  color: #BEA183;
+}
+
+.product-type :not(:last-child) {
+  margin-right: 30px;
+}
+
+.bread-crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bread-crumbs a:active, .bread-crumbs a:visited {
+  color: #342C23;
+}
+
+.bread-crumbs :nth-child(1) {
+  color: #BEA183;
+}
+/*# sourceMappingURL=main.css.map */

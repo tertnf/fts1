@@ -1,0 +1,57 @@
+.lesson-toggle-feature::after{
+    position: absolute;
+    display: inline-block;
+   
+    content: ""; 
+bottom: -1px;
+
+    background-image: url(./../images/svg/slash.svg);
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 20px;
+
+margin-left: 10px;
+
+}
+.button{
+background-color: transparent;
+    border: none;
+}
+.lesson-toggle-button{
+    font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+    
+        color: #342C23;
+
+&.active{
+    color: #BEA183;
+   
+}
+}
+.lesson-toggle-item{
+  
+    margin-left: 16px;
+    margin-right: 10px;
+}
+.lesson-toggle{
+    position: relative;
+    display: flex;
+    margin-left: -16px;
+    margin-right: -10px;
+
+    
+}
+
+.icons{
+    display: flex;
+    & :not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+}
