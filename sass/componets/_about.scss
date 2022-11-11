@@ -1,0 +1,118 @@
+.about-section{
+    margin-bottom: 46px;
+}
+.about-section h2{
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #342C23;
+    margin-bottom: 35px;
+}
+ details > summary {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #BEA183;
+}
+
+summary::after{
+content: "";
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: -5px 5px 0 0;
+    background-image: url(./../images/svg/arrow-down.svg);
+    width: 20px;
+    height: 12px;
+    margin-left: 10px;
+}
+details[open] summary::after {
+    display: inline-block;
+    content: "";
+    background-image: url(./../images/svg/arrow-up.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.mobile-img{
+@media screen and(max-width: 767px) {
+        display: block;
+    }
+    display: none;
+}
+
+
+.desktop-img{
+    @media screen and(min-width: 768px){
+        display: block;
+    }
+display: none;
+}
+
+.img-wrap{
+    display: flex;
+    margin-top: 10px;
+margin-bottom: 25px;
+
+}
+
+.img-wrap :nth-child(3) {
+    width: 50%;
+    margin-left: 10px;
+}
+.img-wrap :nth-child(1) {
+   margin-bottom: auto;
+}
+.img-wrap :nth-child(2) {
+    margin-top: auto;}
+
+
+.img-wrap{
+    position: relative;
+    border-top: 1px solid #BEA183;
+    border-bottom: 1px solid #BEA183;
+}
+.img-wrap::after{
+    box-sizing: content-box;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    
+    border-top: 1px solid #BEA183;
+        border-bottom: 1px solid #BEA183;
+        right: -20px;
+        top:-1px;
+
+}
+.img-wrap::before{
+    box-sizing: content-box;
+    display: block;
+    content: "";
+position: absolute;
+height: 100%;
+    width: 20px;
+    left: -20px;
+    top: -1px;
+    border-top: 1px solid #BEA183;
+    border-bottom: 1px solid #BEA183;
+
+}
+   
+
+    

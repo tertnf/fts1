@@ -1,23 +1,17 @@
-.lesson-toggle-feature::after{
-    position: absolute;
+.lesson-toggle li+li ::before{
+    margin: 0px 10px -2px 10px;
     display: inline-block;
-   
     content: ""; 
-bottom: -1px;
-
     background-image: url(./../images/svg/slash.svg);
     background-repeat: no-repeat;
     width: 7px;
-    height: 20px;
-
-margin-left: 10px;
-
+    height: 16px;
 }
 .button{
 background-color: transparent;
     border: none;
 }
-.lesson-toggle-button{
+.lesson-toggle a{
     font-size: 16px;
         line-height: 20px;
         /* identical to box height */
@@ -30,19 +24,12 @@ background-color: transparent;
    
 }
 }
-.lesson-toggle-item{
-  
-    margin-left: 16px;
-    margin-right: 10px;
-}
-.lesson-toggle{
-    position: relative;
-    display: flex;
-    margin-left: -16px;
-    margin-right: -10px;
 
-    
+.lesson-toggle{
+    display: flex;
+    align-items:center;
 }
+
 
 .icons{
     display: flex;
@@ -54,4 +41,6 @@ background-color: transparent;
 .header-wrap{
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
+
 }
