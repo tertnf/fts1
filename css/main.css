@@ -16,6 +16,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 
 /*Утилиты*/
 .list {
@@ -99,6 +104,15 @@ button {
   margin-top: 24px;
 }
 
+.search-img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .search-img {
+    display: block;
+  }
+}
+
 .hero-title {
   font-family: "Philosopher";
   font-style: normal;
@@ -149,6 +163,13 @@ button {
 }
 .breadcrumb a {
   color: #BEA183;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .breadcrumb .active {
@@ -239,6 +260,18 @@ details[open] summary::after {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .img-wrap {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-wrap {
+    display: block;
+  }
+}
+
 .desktop-img {
   display: none;
 }
@@ -301,4 +334,16 @@ details[open] summary::after {
   top: -1px;
   border-top: 1px solid #BEA183;
   border-bottom: 1px solid #BEA183;
+}
+
+@media screen and (min-width: 768px) {
+  summary::after {
+    display: none;
+  }
+  details > summary {
+    display: none;
+  }
+  details[open] {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

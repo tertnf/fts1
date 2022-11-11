@@ -50,6 +50,9 @@ margin-bottom: 15px;
             color: #BEA183;
         }
         margin-bottom: 25px;
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
 }
 
 .breadcrumb .active {
