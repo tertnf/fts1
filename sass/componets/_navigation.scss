@@ -1,3 +1,36 @@
 .navigation{
-    display: none;
+    
+    @media screen and (max-width: 1023px){
+        display: none;
+    }
+    
+}
+
+.navigation {
+    display: flex;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+    
+    
+        color: #342C23;
+        & a:visited, :active{
+           color: #342C23; 
+            
+        }
+  & :not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+
+.burger{
+    @media screen and (min-width: 1024px) {
+            display: none;
+        }
 }

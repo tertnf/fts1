@@ -86,6 +86,9 @@ display: none;
     margin-top: 10px;
 margin-bottom: 25px;
 
+// position: relative;
+//     border-top: 1px solid #BEA183;
+//     border-bottom: 1px solid #BEA183;
 }
 
 .img-wrap :nth-child(3) {
@@ -98,39 +101,19 @@ margin-bottom: 25px;
 .img-wrap :nth-child(2) {
     margin-top: auto;}
 
+.about-content  li:nth-child(even) {
 
-.img-wrap{
-    position: relative;
-    border-top: 1px solid #BEA183;
-    border-bottom: 1px solid #BEA183;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  
+ 
+    &  .about-content-text{
+        margin-top: 45px;
+    }
 }
-.img-wrap::after{
-    box-sizing: content-box;
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 20px;
-    
-    border-top: 1px solid #BEA183;
-        border-bottom: 1px solid #BEA183;
-        right: -20px;
-        top:-1px;
 
-}
-.img-wrap::before{
-    box-sizing: content-box;
-    display: block;
-    content: "";
-position: absolute;
-height: 100%;
-    width: 20px;
-    left: -20px;
-    top: -1px;
-    border-top: 1px solid #BEA183;
-    border-bottom: 1px solid #BEA183;
 
-}
+
    
 @media screen and (min-width:768px) {
     summary::after {
@@ -143,4 +126,90 @@ height: 100%;
         display: block;
     }
 }
+
+.about-content-wrap{
+   @media screen and (min-width: 768px){
+    display: flex;
+   }
+    
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    .about-content-wrap:nth-child(even) {
+            flex-direction: row-reverse;
+    
+            & .about-content-img {
+                margin-right: 50px;
+            }
+    
+        }
+    
+        .about-content-wrap:nth-child(odd) .about-content-img {
+            margin-left: 50px;
+        }
+    
+        .about-content-img {
+            flex-shrink: 0;
+        }
+}
+
+
+.about-content-text{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+            line-height: 20px;
+            color: #342C23;
+
+        @media screen and (min-width:768px) {
+            
+            font-size: 18px;
+                line-height: 22px;
+        }
+           
+        
+           
+}
+
+.desktop-hr{
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+
+    display: block;
+    
+        border: 0;
+        border-top: 1px solid #BEA183;
+       margin: 0 ;
+left: 0;
+
+      @media screen and (max-width:767px){
+        display:none;
+      }  
+        
+}
+
+.mobile-hr {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+
+    display: block;
+
+    border: 0;
+    border-top: 1px solid #BEA183;
+    margin: 0;
+    left: 0;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+}
+
+
+
     
