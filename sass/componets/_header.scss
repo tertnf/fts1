@@ -1,23 +1,32 @@
 .lesson-toggle li+li ::before{
-    margin: 0px 10px -2px 10px;
+    margin: 0px 10px -6px 10px;
     display: inline-block;
     content: ""; 
     background-image: url(./../images/svg/slash.svg);
     background-repeat: no-repeat;
     width: 7px;
-    height: 16px;
+    height: 20px;
 }
 .button{
 background-color: transparent;
     border: none;
 }
 .lesson-toggle a{
-    font-size: 16px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
         line-height: 20px;
         /* identical to box height */
-
+    
     
         color: #342C23;
+    // font-size: 16px;
+    //     line-height: 20px;
+    //     /* identical to box height */
+
+    
+    //     color: #342C23;
 
 &.active{
     color: #BEA183;
@@ -28,6 +37,9 @@ background-color: transparent;
 .lesson-toggle{
     display: flex;
     align-items:center;
+    @media screen and (min-width: 768px){
+        margin-left: auto;
+    }
 }
 
 
@@ -36,13 +48,23 @@ background-color: transparent;
     & :not(:last-child) {
         margin-right: 10px;
     }
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        margin-left: 60px;
+    }
+    @media screen and (min-width:1024px){
+        margin-left: 54px;
+    }
 }
 
 .header-wrap{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: 24px;
 
+    @media  screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
 }
 
 .search-img{
@@ -50,4 +72,11 @@ background-color: transparent;
         display: block;
     }
     display: none;
+}
+
+.burger{
+    margin-right: 47px;
+    @media screen and (min-width: 768px) {
+        margin-right: 137px;
+    }
 }

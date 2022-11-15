@@ -12,6 +12,15 @@ font-family: 'Philosopher';
     color: #342C23;
 margin-top: 16px;
 margin-bottom: 15px;
+@media screen and (min-width: 768px){
+  
+        font-size: 74px;
+        line-height: 83px;
+        /* identical to box height */
+    
+        margin-top: 24px;
+            margin-bottom: 20px;
+}
 }
 
 .product-type{
@@ -26,15 +35,23 @@ margin-bottom: 15px;
     
         text-transform: uppercase;
     
-        color: #BEA183;
+        color: #BEA183; 
+        justify-content: center;
+       margin-bottom: 25px;
+       @media  screen and (min-width:768px) {
+        margin-bottom: 30px;
+       }
         & a:active,a:visited{
         color: #BEA183;
         }
         & :not(:last-child){
             margin-right: 30px;
+            @media screen and (min-width: 768px){
+                margin-right: 60px;
+            }
         }
-       justify-content: center;
-       margin-bottom: 25px;
+   
+
 }
 
 .breadcrumb{
@@ -42,16 +59,19 @@ margin-bottom: 15px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 20px; 
+        line-height: 20px;  
+        margin-bottom: 25px;
         &:visited, :active{
              color: #BEA183;
         }
         & a {
             color: #BEA183;
         }
-        margin-bottom: 25px;
+       
         @media screen and (min-width: 768px){
             display: flex;
+            align-items: baseline;
+            margin-bottom: 30px;
         }
 }
 
@@ -68,7 +88,9 @@ color: #342C23;
     display: flex;
     align-items: center;
 }
-.breadcrumb  :not(:last-child)::after {
+.breadcrumb  :not(:last-child){
+    margin-bottom: 10px;
+&::after {
     display: inline-block;
     margin: 0px 10px -3px 10px;
     content: "";
@@ -76,7 +98,7 @@ color: #342C23;
     background-repeat: no-repeat;
     width: 7px;
     height: 20px;
-}
+}}
 
    
 

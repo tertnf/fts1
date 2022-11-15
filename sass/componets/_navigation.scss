@@ -1,5 +1,5 @@
-.navigation{
-    
+.navigation ul{
+      display: flex;
     @media screen and (max-width: 1023px){
         display: none;
     }
@@ -7,7 +7,7 @@
 }
 
 .navigation {
-    display: flex;
+  
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -19,11 +19,14 @@
         color: #342C23;
         & a:visited, :active{
            color: #342C23; 
-            
+
         }
   & :not(:last-child) {
         margin-right: 30px;
     }
+   @media screen and (min-width: 1024px) {
+    margin-right: 70px;
+   } 
 }
 
 
