@@ -59,6 +59,7 @@ background-color: transparent;
 
 .header-wrap{
     display: flex;
+    align-items: baseline;
     // justify-content: space-between;
     margin-top: 24px;
 
@@ -67,7 +68,7 @@ background-color: transparent;
     }
 }
 
-.search-img{
+.icon-search{
     @media screen and (min-width: 768px){
         display: block;
     }
@@ -79,4 +80,44 @@ background-color: transparent;
     @media screen and (min-width: 768px) {
         margin-right: 137px;
     }
+}
+
+.icon-heart{
+    @media screen and (min-width: 1024px){
+        width:12px;
+    height: 11px;
+    }
+    width: 22px;
+            height: 15px;
+}
+
+.icon-bag{
+    @media screen and (min-width: 1024px) {
+            width: 10px;
+            height: 11px;
+        }
+    
+        width: 13px;
+        height: 15px;
+   
+}
+
+.icon-user{
+    @media screen and (min-width: 1024px) {
+            width: 9px;
+            height: 11px;
+        }
+    
+        width: 13px;
+        height: 15px;
+}
+
+.icon-search {
+    @media screen and (min-width: 1024px) {
+        width:11px;
+        height: 11px;
+    }
+
+    width: 15px;
+    height: 15px;
 }

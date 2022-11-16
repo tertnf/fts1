@@ -160,6 +160,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-top: 24px;
 }
 @media screen and (min-width: 768px) {
@@ -168,11 +171,11 @@ button {
   }
 }
 
-.search-img {
+.icon-search {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .search-img {
+  .icon-search {
     display: block;
   }
 }
@@ -183,6 +186,50 @@ button {
 @media screen and (min-width: 768px) {
   .burger {
     margin-right: 137px;
+  }
+}
+
+.icon-heart {
+  width: 22px;
+  height: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .icon-heart {
+    width: 12px;
+    height: 11px;
+  }
+}
+
+.icon-bag {
+  width: 13px;
+  height: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .icon-bag {
+    width: 10px;
+    height: 11px;
+  }
+}
+
+.icon-user {
+  width: 13px;
+  height: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .icon-user {
+    width: 9px;
+    height: 11px;
+  }
+}
+
+.icon-search {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .icon-search {
+    width: 11px;
+    height: 11px;
   }
 }
 
@@ -300,6 +347,11 @@ button {
 .about-section {
   margin-bottom: 46px;
 }
+@media screen and (min-width: 768px) {
+  .about-section {
+    margin-bottom: 70px;
+  }
+}
 
 .about-section h2 {
   font-family: "Philosopher";
@@ -336,10 +388,11 @@ details > summary {
   color: #BEA183;
 }
 
-details :last-child {
-  margin-bottom: 20px !important;
+@media screen and (max-width: 767px) {
+  details :last-child {
+    margin-bottom: 20px !important;
+  }
 }
-
 summary::after {
   content: "";
   display: inline-block;
@@ -371,21 +424,14 @@ details[open] summary::after {
   }
 }
 
-.mobile-img-wrap {
-  display: none;
-}
 @media screen and (max-width: 767px) {
   .mobile-img-wrap {
     display: block;
   }
 }
-
-.desktop-laptop-img {
-  display: none;
-}
 @media screen and (min-width: 768px) {
-  .desktop-laptop-img {
-    display: block;
+  .mobile-img-wrap {
+    display: none !important;
   }
 }
 
@@ -410,17 +456,19 @@ details[open] summary::after {
 }
 
 @media screen and (min-width: 1024px) {
-  .about-content li :nth-child(even) {
-    margin-bottom: 40px;
-  }
   .about-content li :nth-child(even) .about-content-text {
-    margin-top: 45px;
+    margin-top: 145px;
   }
 }
 .about-content li {
   margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
+  .about-content li {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
   .about-content li {
     margin-bottom: 40px;
   }
@@ -449,23 +497,43 @@ details[open] summary::after {
 }
 
 @media screen and (min-width: 768px) {
-  .about-content-wrap:nth-child(even) {
+  .about-content :nth-child(even) .about-content-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .about-content-wrap:nth-child(even) .about-img {
-    margin-right: 50px;
+  .about-content :nth-child(even) .about-content-wrap .about-img {
+    margin-right: 30px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .about-content :nth-child(even) .about-content-wrap .about-img {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-content-wrap:nth-child(odd) .about-content-img {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   .about-content-wrap:nth-child(odd) .about-content-img {
     margin-left: 50px;
   }
+}
+@media screen and (min-width: 768px) {
   .about-content-img {
     -ms-flex-negative: 0;
         flex-shrink: 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  .about-content :nth-child(even) .about-content-wrap .about-content-text {
+    margin-top: 45px;
+  }
+}
+
 .about-content-text {
   font-family: "Montserrat";
   font-style: normal;
@@ -513,13 +581,19 @@ details[open] summary::after {
   }
 }
 
+.about-img {
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 @media screen and (max-width: 767px) {
-  .single-img-wrap {
+  .about-img {
     margin-top: 10px;
   }
 }
 
-.about-img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+@media screen and (max-width: 767px) {
+  .about-content :nth-child(odd) .about-content-wrap .about-img {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
